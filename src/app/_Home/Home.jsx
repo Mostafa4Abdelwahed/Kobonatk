@@ -4,7 +4,6 @@ import LatestOffersSection from "./LatestOffersSection"
 import TrendingCompaniesSection from "./TrendingCompaniesSection"
 
 const Home = () => {
-  useEffect
   return (
     <>
     <HeroSection />
