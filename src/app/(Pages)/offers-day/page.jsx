@@ -1,9 +1,12 @@
+"use client"
+import { useState } from "react";
 import OfferCard from "@/app/_components/Global/OfferCard";
 import Pagination from "@/app/_components/Global/Pagination";
 import Container from "@/app/_components/Ui/Container";
 import Link from "next/link";
 
 const offersDay = () => {
+  const [page, setPage] = useState(1)
   return (
     <div>
       <header className="bg-primary text-white py-10 flex flex-col items-center justify-center">
@@ -67,7 +70,7 @@ const offersDay = () => {
                 <OfferCard />
                 <OfferCard />
             </div>
-            <Pagination />
+            <Pagination pageSetter={setPage} totalPages="100" />
         </Container>
       </main>
     </div>

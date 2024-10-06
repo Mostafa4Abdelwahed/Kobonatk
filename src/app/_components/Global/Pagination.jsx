@@ -1,81 +1,28 @@
-const Pagination = () => {
+"use client"
+import ReactPaginate from "react-paginate";
+
+const Pagination = ({ pageSetter, totalPages }) => {
+  const handleClick = (data) => {
+    pageSetter(data.selected + 1);
+  };
+
   return (
-    <div>
-      <ol className="flex justify-center gap-1 text-xs font-medium">
-        <li>
-          <a
-            href="#"
-            className="inline-flex ml-5 transition-all hover:bg-primary hover:text-white text-lg size-12 items-center justify-center rounded border border-primary bg-white text-gray-900 rtl:rotate-180"
-          >
-            <span className="sr-only">الصفحة السابقة</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="size-5"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fillRule="evenodd"
-                d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
-                clipRule="evenodd"
-              />
-            </svg>
-          </a>
-        </li>
-
-        <li>
-          <a
-            href="#"
-            className="flex items-center justify-center transition-all hover:bg-primary hover:text-white text-lg size-12 rounded border border-primary bg-white text-center leading-8 text-gray-900"
-          >
-            1
-          </a>
-        </li>
-
-        <li className="flex items-center justify-center transition-all text-lg hover:bg-primary hover:text-white size-12 rounded border-primary/25 bg-primary text-center leading-8 text-white">
-          2
-        </li>
-
-        <li>
-          <a
-            href="#"
-            className="flex items-center justify-center text-lg transition-all hover:bg-primary hover:text-white size-12 rounded border border-primary bg-white text-center leading-8 text-gray-900"
-          >
-            3
-          </a>
-        </li>
-
-        <li>
-          <a
-            href="#"
-            className="flex items-center justify-center transition-all hover:bg-primary hover:text-white text-lg size-12 rounded border border-primary bg-white text-center leading-8 text-gray-900"
-          >
-            4
-          </a>
-        </li>
-
-        <li>
-          <a
-            href="#"
-            className="inline-flex size-12 mr-5 items-center justify-center transition-all hover:bg-primary hover:text-white rounded border border-primary bg-white text-gray-900 rtl:rotate-180"
-          >
-            <span className="sr-only">الصفحة التالية</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="size-5"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fillRule="evenodd"
-                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                clipRule="evenodd"
-              />
-            </svg>
-          </a>
-        </li>
-      </ol>
-    </div>
+    <ReactPaginate
+      breakLabel="..."
+      nextLabel={<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m9 5l6 7l-6 7"/></svg>}
+      onPageChange={handleClick}
+      marginPagesDisplayed={1}
+      pageRangeDisplayed={1}
+      pageCount={totalPages}
+      previousLabel={<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m15 5l-6 7l6 7"/></svg>}
+      renderOnZeroPageCount={null}
+      containerClassName="flex justify-center gap-1.5 text-xs font-medium"
+      pageLinkClassName="flex items-center justify-center transition-all hover:bg-primary hover:text-white text-lg size-12 rounded border border-primary bg-white text-center leading-8 text-gray-900"
+      nextLinkClassName="inline-flex size-12 mr-5 transition-all hover:bg-primary hover:text-white text-lg items-center justify-center rounded border border-primary bg-white text-gray-900 rtl:rotate-180"
+      previousLinkClassName="inline-flex size-12 ml-5 transition-all hover:bg-primary hover:text-white text-lg items-center justify-center rounded border border-primary bg-white text-gray-900 rtl:rotate-180"
+      breakLinkClassName="flex items-center justify-center transition-all hover:bg-primary hover:text-white text-lg size-12 rounded border border-primary bg-white text-center leading-8 text-gray-900"
+      activeClassName="bg-primary rounded p-px text-white -translate-y-3"
+    />
   );
 };
 

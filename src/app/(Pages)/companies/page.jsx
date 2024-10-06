@@ -1,9 +1,12 @@
+"use client"
+import { useState } from "react"
 import CompanyCard from "@/app/_components/Global/CompanyCard";
 import Pagination from "@/app/_components/Global/Pagination";
 import Container from "@/app/_components/Ui/Container";
 import Link from "next/link";
 
 const companies = () => {
+  const [page, setPage] = useState(1);
   return (
     <div>
       <header className="bg-primary text-white py-10 flex flex-col items-center justify-center">
@@ -58,7 +61,7 @@ const companies = () => {
             <CompanyCard />
             <CompanyCard />
           </div>
-          <Pagination />
+          <Pagination pageSetter={setPage} totalPages="100" />
         </Container>
       </main>
     </div>

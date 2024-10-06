@@ -1,9 +1,12 @@
+"use client"
+import { useState } from "react"
 import ArticleCard from "@/app/_components/Global/ArticleCard";
 import Pagination from "@/app/_components/Global/Pagination";
 import Container from "@/app/_components/Ui/Container";
 import Link from "next/link";
 
 const blog = () => {
+  const [page, setPage] = useState(1);
   return (
     <div>
       <header className="bg-primary text-white py-10 flex flex-col items-center justify-center">
@@ -52,7 +55,7 @@ const blog = () => {
             <ArticleCard />
             <ArticleCard />
           </div>
-          <Pagination />
+          <Pagination pageSetter={setPage} totalPages="100" />
         </Container>
       </main>
     </div>
