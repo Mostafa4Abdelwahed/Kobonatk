@@ -5,7 +5,7 @@ const LatestOffersSection = () => {
   return (
     <div className="bg-gray-50/40 border-y-2 border-gray-100 py-10">
       <Container>
-        <h1 className="text-4xl md:text-5xl font-bold mb-12">
+        <h1 className="text-4xl md:text-5xl font-bold mb-10">
           احدث <span className="text-primary">العروض</span>
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-7">

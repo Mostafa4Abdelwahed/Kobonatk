@@ -20,6 +20,7 @@ const TrendingCompaniesSection = () => {
           <CompanyCard />
           <CompanyCard />
         </div>
+        <Link href="/companies" className="text-white mt-7 text-center block md:hidden bg-primary hover:bg-transparent hover:text-primary hover:border-primary transition-all border-2 border-transparent text-xl py-4 px-12 rounded-lg">جميع المتاجر</Link>
       </Container>
     </div>
   );

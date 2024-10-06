@@ -9,11 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@headlessui/react": "^2.1.9",
     "@next/font": "^14.2.14",
     "aos": "^2.3.4",
     "next": "14.2.14",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-paginate": "^8.2.0"
   },
   "devDependencies": {
     "postcss": "^8",

@@ -42,7 +42,7 @@ const blog = () => {
           </ol>
         </nav>
       </header>
-      <main className="my-10">
+      <main className="py-10">
         <Container>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-7 mb-10">
             <ArticleCard />

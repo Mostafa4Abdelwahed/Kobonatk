@@ -7,7 +7,7 @@ const companies = () => {
   return (
     <div>
       <header className="bg-primary text-white py-10 flex flex-col items-center justify-center">
-        <h1 className="text-5xl font-bold">جميع الشركات</h1>
+        <h1 className="text-5xl font-bold">جميع المتاجر</h1>
         <nav className="mt-7">
           <ol className="flex items-center gap-1 text-sm text-white">
             <li>
@@ -36,7 +36,7 @@ const companies = () => {
                 href="/companies"
                 className="block transition hover:text-white/75"
               >
-                الشركات
+                جميع المتاجر
               </Link>
             </li>
           </ol>
