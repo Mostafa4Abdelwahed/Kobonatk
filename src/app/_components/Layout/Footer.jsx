@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="bg-white border-t-2">
       <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
         <div className="sm:flex sm:items-center sm:justify-between">
-          <div className="flex gap-3 items-center">
+          <div className="flex gap-3 items-center mx-auto md:mx-0">
             <Image src={Logo} width={"35"} />
             <h1 className="font-bold text-3xl text-primary">كوبوناتك</h1>
           </div>

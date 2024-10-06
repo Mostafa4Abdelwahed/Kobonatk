@@ -72,7 +72,7 @@ const OfferCard = () => {
                   <div className="my-4">
                     <div className="flex flex-col md:flex-row gap-2.5">
                       <input value={code} disabled className="bg-gray-200 w-full py-2 text-center rounded-md" />
-                      <button onClick={handleCopy} className="bg-primary text-white rounded-md w-auto inline-flex py-2 px-8">
+                      <button onClick={handleCopy} className="bg-primary text-center text-white rounded-md w-auto inline-flex py-2 px-8">
                       {copiled ? "تم النسخ" : "نسخ"}
                       </button>
                     </div>

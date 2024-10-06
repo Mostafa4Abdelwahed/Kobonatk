@@ -5,7 +5,6 @@ const Pagination = ({ pageSetter, totalPages }) => {
   const handleClick = (data) => {
     pageSetter(data.selected + 1);
   };
-
   return (
     <ReactPaginate
       breakLabel="..."

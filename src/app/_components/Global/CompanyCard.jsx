@@ -1,6 +1,7 @@
 import amazonLogo from "@/assets/amazon.png"
 import Image from "next/image"
 import ButtonCta from "../Ui/ButtonCta"
+import Link from "next/link"
 
 const CompanyCard = () => {
   return (
@@ -10,7 +11,9 @@ const CompanyCard = () => {
             <h1 className="text-xl">أمازون</h1>
         </div>
         <p className="text-xl mt-4 mb-4">أكثر من 120+ كود يوميا علي جميع المنتجات</p>
+        <Link href="/companies/11">
         <ButtonCta full>عرض الأكواد</ButtonCta>
+        </Link>
     </div>
   )
 }
