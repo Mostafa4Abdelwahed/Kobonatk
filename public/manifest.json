@@ -3,9 +3,6 @@
   "short_name": "Kobonatk",
   "theme_color": "#f12711",
   "background_color": "#f5af19",
-  "display": "standalone",
-  "scope": "/",
-  "start_url": "/",
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",
