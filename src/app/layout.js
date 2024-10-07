@@ -29,7 +29,7 @@ export const metadata = {
     // startUpImage: [],
   },
   formatDetection: {
-    telephone: false,
+    telephone: true,
   },
   openGraph: {
     type: "website",
