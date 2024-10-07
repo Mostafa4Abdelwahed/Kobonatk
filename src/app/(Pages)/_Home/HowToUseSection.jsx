@@ -1,9 +1,9 @@
 import Step1 from "@/assets/Steps/step-1.png";
 import Step2 from "@/assets/Steps/step-2.png";
 import Step3 from "@/assets/Steps/step-3.png";
-import Container from "../_components/Ui/Container";
+import Container from "../../_components/Ui/Container";
 import Image from "next/image";
-import StepCard from "../_components/Home/StepCard";
+import StepCard from "../../_components/Home/StepCard";
 
 const HowToUseSection = () => {
   return (

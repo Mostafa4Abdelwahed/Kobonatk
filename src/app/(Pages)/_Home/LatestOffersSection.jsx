@@ -1,5 +1,5 @@
-import OfferCard from "../_components/Global/OfferCard";
-import Container from "../_components/Ui/Container";
+import OfferCard from "../../_components/Global/OfferCard";
+import Container from "../../_components/Ui/Container";
 
 const LatestOffersSection = () => {
   return (

@@ -1,6 +1,6 @@
 import Link from "next/link";
-import CompanyCard from "../_components/Global/CompanyCard";
-import Container from "../_components/Ui/Container";
+import CompanyCard from "../../_components/Global/CompanyCard";
+import Container from "../../_components/Ui/Container";
 
 const TrendingCompaniesSection = () => {
   return (
